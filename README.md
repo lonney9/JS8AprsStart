@@ -4,6 +4,7 @@ Startup script for [JS8Call](http://js8call.com) and associated APRS app [JS8Cal
 Related to my [HF APRS with JS8Call project](https://lonneys-notebook.blogspot.com/2020/02/hf-aprs-with-js8call.html).
 
 `js8aprs_start.sh` can run at startup via `js8aprs_start.desktop` located in `/home/pi/.config/autostart`.
+
 I discovered this autostart method from [How to Run a Raspberry Pi Program on Startup](https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup#method-2-autostart).
 
 The scripts assume the default `/home/pi` home directory.
