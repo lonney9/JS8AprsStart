@@ -1,5 +1,5 @@
 # JS8 APRS Startup
-Startup script for JS8Call and associated APRS app [JS8CallUtilsGPSD](https://github.com/m0iax/JS8CallUtilsGPSD) on Raspberry Pi running Buster Desktop.
+Startup script for [JS8Call](http://js8call.com) and associated APRS app [JS8CallUtilsGPSD](https://github.com/m0iax/JS8CallUtilsGPSD) on Raspberry Pi running Buster Desktop.
 
 Related to my [HF APRS with JS8Call project](https://lonneys-notebook.blogspot.com/2020/02/hf-aprs-with-js8call.html).
 
