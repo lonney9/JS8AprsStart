@@ -39,7 +39,7 @@ This basic script used with the Debian 12 laptop setup to handle power disruptio
 
 flrig_sprs_start.sh
 
-This script more advanced script used with the Debian 12 laptop setup to start the applications and handle power disruptions (vehicle stop/start).
+This more advanced script used with the Debian 12 laptop setup to start the applications and handle power disruptions (vehicle stop/start).
 
 Uses wmctrl to gracefully close the applications allowing them to save their current state and settings.
 
