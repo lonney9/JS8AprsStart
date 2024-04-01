@@ -37,7 +37,7 @@ This basic script used with the Debian 12 laptop setup to handle power disruptio
 
 ## FLRig APRS Start
 
-flrig_sprs_start.sh
+flrig_aprs_start.sh
 
 This more advanced script used with the Debian 12 laptop setup to start the applications and handle power disruptions (vehicle stop/start).
 
@@ -49,3 +49,9 @@ Uses wmctrl to gracefully close the applications allowing them to save their cur
 - Closes and restarts applications if rig connection is interrupted (power loss).
 - Waits until RIG_PORT is present (USB port), restarts applications.
 - Resumes monitoring DBM value. 
+
+flrig_aprs_start.ps1
+
+Windows PowerShell version of the script.
+
+CTRL C function not implemented, press Enter key to continue, otherwise the same.
