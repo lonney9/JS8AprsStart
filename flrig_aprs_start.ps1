@@ -1,3 +1,4 @@
+# PowerShell v2
 # Windows PowerShell version of the flrig aprs start script
 # Script starts Flrig, waits for Enter key press then proceeds to start JS8Call and JS8Call Utilities
 # Once main script starts Flrig rig connection is monitored
@@ -13,7 +14,7 @@ $FLRIG_IP = "127.0.0.1:12345"
 $JS8CALL_EX = "C:\Program Files (x86)\js8call\bin\js8call.exe"
 $JS8CALL_U_EX = "./JS8CallUtils_v2.exe"
 $DBM_GET_XML = '<?xml version="1.0"?><methodCall><methodName>rig.get_DBM</methodName></methodCall>'
-$DBM_DISCONN = '<value>-128</value>'
+$DBM_DISCONN = '-128'
 
 function Close-Program {
     param (
@@ -92,7 +93,7 @@ while ($true) {
     Write-Host "DBM reading: $DBM_RESULT"
 
     # If DBM reading becomes -128, rig control lost
-    if ($DBM_RESULT -eq "-128") {
+    if ($DBM_RESULT -eq $DBM_DISCONN) {
         Write-Host "Rig control lost, closing applications.."
         # Close applications
         Close-Program -ProcessName "JS8CallUtils_v2"
@@ -114,8 +115,8 @@ while ($true) {
                 Start-Process -FilePath $FLRIG_EX
                 Write-Host "Sleep 10"
                 Start-Sleep -Seconds 10
-				Start-Process -FilePath $JS8CALL_EX
-				Start-Process -FilePath $JS8CALL_U_EX
+                Start-Process -FilePath $JS8CALL_EX
+                Start-Process -FilePath $JS8CALL_U_EX
                 break
             }
         }
