@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=JS8AprsStart
+Exec=/home/pi/JS8AprsStart/js8aprs_start.sh
